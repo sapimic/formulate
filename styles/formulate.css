@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Montserrat, Arial, sans-serif;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0 12%;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav h1 {
+  font-size: 30px;
+  color: #0069ff;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a .nav-link-text {
+  display: none;
+}
+
+nav ul li .nav-link {
+  color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 20px;
+}
+
+nav ul li .nav-link:hover {
+  cursor: pointer;
+  color: #0069ff;
+}
+
+.nav-left {
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+.nav-right {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.nav-button-right {
+  margin-left: 20px;
+}
+
+.burger-container {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  nav {
+    padding: 0 5%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul {
+    width: 80%;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    top: 70px;
+    position: fixed;
+  }
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+  nav ul li a .nav-link-text {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #032c66d0;
+  }
+  nav ul li a:hover {
+    background-color: #006aff31;
+  }
+  nav ul li .nav-link {
+    margin: 0px 0px;
+  }
+  nav button {
+    display: none;
+  }
+  nav .burger-container {
+    display: block;
+    margin-left: auto;
+  }
+  .nav-left {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .nav-right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-6px, 4.5px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-7px, -5px);
+}
+
+button {
+  border: none;
+  background-color: #0069ff;
+  font-weight: 500;
+  color: #fff;
+  padding: 12px 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0155ca;
+}
+
+.button-black {
+  border: none;
+  background-color: #1f2123;
+  border: solid 1px;
+  color: white;
+  padding: 12px 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.button-black:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: solid #1f2123 1px;
+}
+/*# sourceMappingURL=formulate.css.map */
