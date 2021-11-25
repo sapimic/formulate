@@ -9,27 +9,472 @@
     <link rel="stylesheet" href="./styles/fontawesome.css" />
   </head>
   <body>
+    <!-- Banner -->
+
+    <div class="banner"><p>We are offering a 50% discount to our first clients!</p></div>
+
+    <!-- Navigation -->
+
     <nav>
       <h1>FISBYTE</h1>
-      <ul class="nav-left">
+      <ul class="nav-left" id="nav-dropdown">
         <li>
           <a href="#" class="nav-link">Home</a>
         </li>
         <li>
           <a href="#" class="nav-link">About</a>
         </li>
-        <li><a href="#" class="nav-link">FAQ</a></li>
+        <li class="nav-item">
+          <a class="nav-link" id="dropdown-anchor"
+            >FAQ<i class="fas fa-angle-down dropdown-caret"></i
+          ></a>
+          <div class="dropdown-block">
+            <a href="#" class="dropdown-link">Questions</a>
+            <a href="#" class="dropdown-link">Creating new runners</a>
+          </div>
+        </li>
         <li><a href="#" class="nav-link">Services</a></li>
         <li><a href="#" class="nav-link">Products</a></li>
+        <button class="nav-dropdown-button">Log in</button>
       </ul>
-      <button>Log in</button>
-      <button class="nav-button-right button-black">Log out</button>
-      <div class="burger-container" onclick="myFunction(this)">
+      <a class="button nav-button">Log in</a>
+      <a class="button nav-button nav-button-right button-black">Log out</a>
+      <div class="burger-container" id="burger-container">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
     </nav>
+
+    <!-- Pricing -->
+
+    <section>
+      <div class="pricing-container">
+        <div class="pricing">
+          <h3 class="price-type">Standard</h3>
+          <h4>$499/mo</h4>
+          <ul>
+            <li><i class="fas fa-check fa-sm"></i>100GB Memory Ram</li>
+            <li><i class="fas fa-check fa-sm"></i>quick new content</li>
+            <li><i class="fas fa-check fa-sm"></i>waiter</li>
+            <li><i class="fas fa-check fa-sm"></i>lobster</li>
+            <li><i class="fas fa-check fa-sm"></i>fish</li>
+          </ul>
+          <a class="button">See More</a>
+        </div>
+        <div class="pricing">
+          <h3 class="price-type">exclusive</h3>
+          <h4>$499/mo</h4>
+          <ul>
+            <li><i class="fas fa-check fa-sm"></i>100GB Memory Ram</li>
+            <li><i class="fas fa-check fa-sm"></i>quick new content</li>
+            <li><i class="fas fa-check fa-sm"></i>waiter</li>
+            <li><i class="fas fa-check fa-sm"></i>lobster</li>
+            <li><i class="fas fa-check fa-sm"></i>fish</li>
+          </ul>
+          <a class="button button-black">See More</a>
+        </div>
+        <div class="pricing">
+          <h3 class="price-type">premium</h3>
+          <h4>$499/mo</h4>
+          <ul>
+            <li><i class="fas fa-check fa-sm"></i>100GB Memory Ram</li>
+            <li><i class="fas fa-check fa-sm"></i>quick new content</li>
+            <li><i class="fas fa-check fa-sm"></i>waiter</li>
+            <li><i class="fas fa-check fa-sm"></i>lobster</li>
+            <li><i class="fas fa-check fa-sm"></i>fish</li>
+          </ul>
+          <a class="button">See More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordion -->
+    <h1 style="text-align: center;">Accordions & F.A.Q</h1>
+
+    <section>
+      <div class="accordion-container">
+        <div class="accordion">How to wash dishes?</div>
+        <div class="panel">
+          <p class="text-light">Text 1</p>
+        </div>
+        <div class="accordion">Where to buy quality foods?</div>
+        <div class="panel">
+          <p class="text-light">Text 2</p>
+        </div>
+        <div class="accordion">Heading 2</div>
+        <div class="panel">
+          <p class="text-light">Text 2</p>
+        </div>
+        <div class="accordion">Heading 2</div>
+        <div class="panel">
+          <p class="text-light">Text 2</p>
+        </div>
+        <div class="accordion">Heading 2</div>
+        <div class="panel">
+          <p class="text-light">Typing a lot of stuff that's cool.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="faq-container">
+        <div class="faq-card">
+          <h3>Where are the cats?</h3>
+          <p>Eating food, sleeping, looking for other cats and having a lot of fun while doing all that, where are you?</p>
+        </div>
+        <div class="faq-card">
+          <h3>Where are the cats?</h3>
+          <p>Eating food, sleeping, looking for other cats and having a lot of fun while doing all that, where are you?</p>
+        </div>
+        <div class="faq-card">
+          <h3>Where are the cats?</h3>
+          <p>Eating food, sleeping, looking for other cats and having a lot of fun while doing all that, where are you?</p>
+        </div>
+        <div class="faq-card">
+          <h3>Where are the cats?</h3>
+          <p>Eating food, sleeping, looking for other cats and having a lot of fun while doing all that, where are you?</p>
+        </div>
+        <div class="faq-card">
+          <h3>Where are the cats?</h3>
+          <p>Eating food, sleeping, looking for other cats and having a lot of fun while doing all that, where are you?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forms -->
+
+    <section>
+      <div class="contact-form">
+        <form>
+          <h1>Contact Form</h1>
+          <label for="">Full Name</label>
+          <input type="text" placeholder="Full Name" />
+          <label for="">Choose your career:</label>
+          <input type="radio" name="radio" id=""><p>Doctor</p><br>
+          <input type="radio" name="radio" id=""><p>Programmer</p>
+          <label for="">Choose what you like:</label>
+          <input type="checkbox" name="" id=""><p>Carrots</p><br>
+          <input type="checkbox" name="" id=""><p>Tomatoes</p>
+          <label for="">Email</label>
+          <input type="email" name="mail" placeholder="E-mail" />
+          <label for="">Number</label>
+          <input type="number" name="" placeholder="Phone Number" />
+          <label for="Message">Message</label>
+          <textarea name="" placeholder="Your message..."></textarea>
+          <button class="button" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="login-form">
+        <form>
+          <h1>FISBYTE LOGIN</h1>
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="Password">
+          <a href="#">You don't have an account?</a>
+          <button class="button" type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Cards -->
+
+    <h1 style="text-align: center;">Cards</h1>
+
+    <section>
+      <div class="cards-1">
+        <div class="card">
+          <div class="background"></div>
+          <h3>Hello</h3>
+          <p>
+            Full amazing running shoes at your disposal to buy and feel amazing.
+          </p>
+          <a class="button">Eat Food</a>
+        </div>
+        <div class="card">
+          <div class="background"></div>
+          <h3>Hello</h3>
+          <p>
+            Amazing nike running shoes for any possible situation you could
+            have.
+          </p>
+          <a class="button">Eat Food</a>
+        </div>
+        <div class="card">
+          <div class="background"></div>
+          <h3>Hello</h3>
+          <p>
+            Running from different parts and creating different amazing content.
+          </p>
+          <a class="button">Eat Food</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cards-2">
+        <div class="card">
+          <h2>Glass Fiber Stuff</h2>
+        </div>
+        <div class="card">
+          <h2>Insane Reality</h2>
+        </div>
+        <div class="card">
+          <h2>New World</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jumbotrons -->
+
+    <section>
+      <div class="jumbotron-bg">
+        <div class="jumbotron-1">
+          <h1>Hello World</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero,
+            nostrum aliquid amet corrupti quis numquam doloribus, sunt explicabo
+            suscipit laboriosam minus ipsum repellendus nesciunt quam vel, autem
+            maiores atque voluptates.
+          </p>
+          <a href="# " class="button">Go There</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="jumbotron-bg">
+        <div class="jumbotron-2">
+          <h1>Hello World</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero,
+            nostrum aliquid amet corrupti quis numquam doloribus, sunt explicabo
+            suscipit laboriosam minus ipsum repellendus nesciunt quam vel, autem
+            maiores atque voluptates.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Heroes -->
+
+    <section>
+      <div class="hero-bg">
+        <div class="hero-1">
+          <h1>Amazing Running <span>Sneakers</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            sapiente sunt ex nesciunt similique esse enim alias voluptatibus
+            minus eum. Doloremque veritatis, modi pariatur eius est amet dicta.
+            Nisi, optio!
+          </p>
+          <a href="#" class="button hero-button">See More</a>
+          <a href="#" class="button hero-button button-black"
+            >Purchase Something</a
+          >
+        </div>
+        <div class="hero-2">
+          <div class="hero-content-1">
+            <h1>Amazing Running <span>Sneakers</span></h1>
+            <p>
+              Buying new coupons every day of teh week to make amazing content.
+              So now im writing even more content so you don't have to worrk
+              about any other thing you do or write or type or do.
+            </p>
+            <a href="#" class="button hero-button-1">See More</a>
+            <a href="#" class="button hero-button button-black"
+              >Purchase Something</a
+            >
+          </div>
+          <div class="hero-content-2">
+            <img src="https://im0-tub-ru.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d&n=27&h=480&w=480" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="hero-3">
+          <div class="hero-content-1">
+            <h1>Amazing Running <span>Sneakers</span></h1>
+            <p>
+              Buying new coupons every day of teh week to make amazing content.
+              So now im writing even more content so you don't have to worrk
+              about any other thing you do or write or type or do.
+            </p>
+            <a href="#" class="button hero-button-1">See More</a>
+            <a href="#" class="button hero-button button-black"
+              >Purchase Something</a
+            >
+          </div>
+          <div class="hero-content-2">
+            <div class="contact-form">
+              <form>
+                <h2>Send us a message</h2>
+                <label for="">Full Name</label>
+                <input type="text" placeholder="Full Name" />
+                <label for="">Message</label>
+                <input type="text" name="" placeholder="Your message" />
+                <button class="button" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tables -->
+    <h1 style="text-align: center;">Tables</h1>
+
+
+<section>
+  <div class="table-container">
+  <table class="features-table">
+  <tr>
+    <th>Features</th>
+    <th>Basic</th>
+    <th>Pro</th>
+    <th>Premium</th>
+    <th>Exclusive</th>
+  </tr>
+  <tr>
+    <td>Sample text</td>
+    <td><i class="fas fa-times"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fas fa-times"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr>
+    <td>Sample text</td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr>
+    <td>Sample text</td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  </table>
+  </div>
+</section>
+
+    <!-- Features -->
+
+    <h1 style="text-align: center;">Features</h1>
+
+    <section>
+      <div class="features">
+        <div class="feature-card-1">
+          <i class="fas fa-check fa-lg"></i>
+          <h3>House For Everyone</h3>
+          <p>Get the house of your dreams for an affordable price that you have never seen anything like it before.</p>
+        </div>
+        <div class="feature-card-1">
+          <i class="fas fa-check fa-lg""></i>
+          <h3>House For Everyone</h3>
+          <p>Get the house of your dreams for an affordable price that you have never seen anything like it before.</p>
+        </div>
+        <div class="feature-card-1">
+          <i class="fas fa-check fa-lg""></i>
+          <h3>House For Everyone</h3>
+          <p>Get the house of your dreams for an affordable price that you have never seen anything like it before.</p>
+        </div>
+        <div class="feature-card-1">
+          <i class="fas fa-check fa-lg""></i>
+          <h3>House For Everyone</h3>
+          <p>Get the house of your dreams for an affordable price that you have never seen anything like it before.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="features">
+        <div class="feature-card-2">
+          <i class="fab fa-react fa-2x"></i>
+          <h3>House For Everyone</h3>
+          <p>Get the house of your dreams for an affordable price that you have never seen anything like it before.</p>
+        </div>
+        <div class="feature-card-2">
+          <i class="fas fa-home fa-2x"></i>
+          <h3>House For Everyone</h3>
+          <p>Get the house of your dreams for an affordable price that you have never seen anything like it before.</p>
+        </div>
+        <div class="feature-card-2">
+          <i class="fas fa-home fa-2x"></i>
+          <h3>House For Everyone</h3>
+          <p>Get the house of your dreams for an affordable price that you have never seen anything like it before.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="features">
+        <div class="feature-card-3">
+          <h2>01</h2>
+          <h3>House For Everyone</h3>
+          <p>Get the house of your dreams for an affordable price that you have never seen anything like it before.</p>
+        </div>
+        <div class="feature-card-3">
+          <h2>02</h2>
+          <h3>House For Everyone</h3>
+          <p>Get the house of your dreams for an affordable price that you have never seen anything like it before.</p>
+        </div>
+        <div class="feature-card-3">
+          <h2>03</h2>
+          <h3>House For Everyone</h3>
+          <p>Get the house of your dreams for an affordable price that you have never seen anything like it before.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+
+    <h1 style="text-align: center;">Stats</h1>
+
+    <section>
+        <div class="stats-container-1">
+          <h1>Take a look at our numbers!</h1>
+          <p class="stats-sub">We are sure you haven't seen things of this level before so make sure to look at our stats!</p>
+          <div class="stats">
+          <div class="stat-number">
+            <h1>175</h1>
+            <p>Sales</p>
+          </div>
+          <div class="stat-number">
+            <h1>650</h1>
+            <p>Satisfied Customers</p>
+          </div>
+          <div class="stat-number">
+            <h1>100%</h1>
+            <p>Quality</p>
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="stats-container-2">
+          <h1>Take a look at our numbers!</h1>
+          <p class="stats-sub">We are sure you haven't seen things of this level before so make sure to look at our stats!</p>
+          <div class="stats">
+          <div class="stat-number">
+            <h1>175</h1>
+            <p>Sales</p>
+          </div>
+          <div class="stat-number">
+            <h1>650</h1>
+            <p>Satisfied Customers</p>
+          </div>
+          <div class="stat-number">
+            <h1>100%</h1>
+            <p>Quality</p>
+          </div>
+          </div>
+        </div>
+    </section>
 
     <script src="js/formulate.js"></script>
   </body>

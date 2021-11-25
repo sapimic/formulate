@@ -1,0 +1,55 @@
+.jumbotron-bg {
+  background-color: $secondary-color;
+}
+
+.jumbotron-1 {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+
+  h1 {
+    margin: 20px;
+    color: $white;
+  }
+
+  p {
+    margin: 20px;
+    color: $white;
+  }
+
+  a {
+    margin-bottom: 20px;
+  }
+}
+
+.jumbotron-2 {
+  margin-left: 120px;
+  padding: 20px;
+  width: 50%;
+
+  h1 {
+    margin: 20px;
+    color: $white;
+  }
+
+  p {
+    margin: 20px;
+    color: $white;
+  }
+
+  a {
+    margin-bottom: 20px;
+  }
+}
+
+@include small-screens-only {
+  .jumbotron-1 {
+    width: 100%;
+  }
+
+  .jumbotron-2 {
+    width: 100%;
+    margin-left: 0px;
+  }
+}

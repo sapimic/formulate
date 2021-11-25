@@ -1,7 +1,7 @@
 nav {
   width: 100%;
   display: flex;
-  font-family: Montserrat, Arial, sans-serif;
+  background-color: $white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 0 12%;
   height: 70px;
@@ -14,9 +14,12 @@ nav {
 
   ul {
     display: flex;
+    align-items: center;
     list-style: none;
 
     li {
+      position: relative;
+
       a {
         text-decoration: none;
 
@@ -39,6 +42,46 @@ nav {
       }
     }
   }
+}
+
+.nav-dropdown-button {
+  display: none;
+}
+
+.dropdown-block {
+  top: 45px;
+  display: none;
+  width: 200px;
+  flex-direction: column;
+  background-color: $white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: absolute;
+}
+
+.dropdown-block-active {
+  display: flex;
+}
+
+.dropdown-caret {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.dropdown-link {
+  color: #000;
+  transition: 0.3s;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    color: $primary-color;
+  }
+}
+
+.dropdown-link:hover {
+  background-color: #006aff31;
 }
 
 .nav-left {
@@ -67,11 +110,14 @@ nav {
     justify-content: center;
 
     ul {
+      display: none;
+      background-color: $white;
       width: 80%;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       flex-direction: column;
-      padding: 20px;
       top: 70px;
+      padding: 20px;
+      overflow: hidden;
       position: fixed;
 
       li {
@@ -97,7 +143,7 @@ nav {
       }
     }
 
-    button {
+    .nav-button {
       display: none;
     }
 
@@ -105,6 +151,26 @@ nav {
       display: block;
       margin-left: auto;
     }
+
+    .dropdown-button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  .dropdown-block {
+    top: 45px;
+    width: 200px;
+    flex-direction: column;
+    background-color: $white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+    position: static;
+  }
+
+  .nav-active {
+    display: block;
   }
 
   .nav-left {

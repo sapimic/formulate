@@ -1,0 +1,10 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  color: $white;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, $primary-color, $third-color);
+  height: 50px;
+  width: 100%;
+}

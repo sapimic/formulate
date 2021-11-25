@@ -2,7 +2,25 @@
 
 * {
   box-sizing: border-box;
-  font-family: Montserrat;
+  font-family: Poppins;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+  color: $secondary-color;
+  font-family: Montserrat;
+}
+
+h2 {
+  font-size: 26px;
+  color: $secondary-color;
+  font-family: Montserrat;
+}
+
+h3 {
+  font-size: 20px;
+  color: $secondary-color;
+  font-family: Montserrat;
 }

@@ -1,0 +1,75 @@
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.panel {
+  height: 0;
+  transition: 0.3s linear;
+  overflow: hidden;
+}
+
+div.panel.show {
+  height: 60px;
+  padding: 20px 30px;
+}
+
+.accordion {
+  width: 50%;
+  color: $white;
+  transition: 0.3s;
+  background-color: $secondary-color;
+  border-bottom: solid 1px darken($secondary-color, $amount: 5%);
+  padding: 20px 30px;
+
+  &::after {
+    content: "\002B";
+    font-weight: bold;
+    border: none;
+    float: right;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: darken($secondary-color, 4%);
+  }
+}
+
+.active::after {
+  content: "\2212";
+}
+
+.panel {
+  width: 50%;
+  padding: 0 30px;
+  background-color: $white;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  .faq-card {
+    border: 1px solid $third-color;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 400px;
+
+    p {
+      margin-top: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .accordion {
+    width: 90%;
+  }
+
+  .panel {
+    width: 90%;
+  }
+}
