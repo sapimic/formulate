@@ -9,19 +9,16 @@
 
 h1 {
   font-size: 32px;
-  color: #151618;
   font-family: Montserrat;
 }
 
 h2 {
   font-size: 26px;
-  color: #151618;
   font-family: Montserrat;
 }
 
 h3 {
   font-size: 20px;
-  color: #151618;
   font-family: Montserrat;
 }
 
@@ -443,7 +440,7 @@ div.panel.show {
   }
 }
 
-.contact-form form {
+.form form {
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 60%;
@@ -451,27 +448,27 @@ div.panel.show {
   margin: auto;
 }
 
-.contact-form form h1 {
+.form form h1 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.contact-form form input {
+.form form input {
   width: 100%;
   padding: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 14px;
   border: none;
   border-bottom: 1px solid black;
 }
 
-.contact-form form input:focus {
+.form form input:focus {
   outline: none;
   border-bottom: 1px solid #0069ff;
 }
 
-.contact-form form input[type="radio"] {
+.form form input[type="radio"] {
   position: relative;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -483,7 +480,7 @@ div.panel.show {
   width: auto;
 }
 
-.contact-form form input[type="radio"]::before {
+.form form input[type="radio"]::before {
   content: "";
   position: absolute;
   -webkit-transition: 0.1s;
@@ -496,12 +493,12 @@ div.panel.show {
   background-color: #0069ff;
 }
 
-.contact-form form input[type="radio"]:checked::before {
+.form form input[type="radio"]:checked::before {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-.contact-form form input[type="checkbox"] {
+.form form input[type="checkbox"] {
   position: relative;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -512,7 +509,7 @@ div.panel.show {
   width: auto;
 }
 
-.contact-form form input[type="checkbox"]::before {
+.form form input[type="checkbox"]::before {
   position: absolute;
   background-color: #0069ff;
   -webkit-transition: 0.1s;
@@ -526,12 +523,12 @@ div.panel.show {
   width: 10px;
 }
 
-.contact-form form input[type="checkbox"]:checked::before {
+.form form input[type="checkbox"]:checked::before {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-.contact-form textarea {
+.form textarea {
   width: 100%;
   padding: 5px 10px;
   -webkit-transition: 0.3s;
@@ -541,22 +538,22 @@ div.panel.show {
   font-size: 14px;
 }
 
-.contact-form textarea:focus {
+.form textarea:focus {
   outline: none;
   border: 1px solid #0069ff;
 }
 
-.contact-form label {
+.form label {
   display: block;
   margin: 15px 0;
   font-weight: 500;
 }
 
-.contact-form button {
+.form button {
   margin-top: 20px;
 }
 
-.contact-form p {
+.form p {
   display: inline;
   vertical-align: middle;
   margin-left: 12px;
@@ -584,7 +581,7 @@ div.panel.show {
   padding: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 14px;
   border: none;
   border-bottom: 1px solid black;
 }
@@ -1129,6 +1126,99 @@ tr:nth-child(even) {
   background-image: linear-gradient(90deg, #0069ff, #25a5fa);
   height: 50px;
   width: 100%;
+}
+
+.testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: 50%;
+  padding: 50px 40px;
+  border-radius: 20px;
+  background: whitesmoke;
+}
+
+.testimonial .quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  z-index: 1;
+  position: relative;
+}
+
+.testimonial .quote p {
+  text-align: center;
+  font-size: 18px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.testimonial .quote .fa-quote-left {
+  position: absolute;
+  top: 0;
+  left: -15%;
+  opacity: 0.5;
+  z-index: -1;
+  color: #25a5fa;
+}
+
+.testimonial .quote .fa-quote-right {
+  position: absolute;
+  right: -15%;
+  opacity: 0.5;
+  z-index: -1;
+  color: #25a5fa;
+}
+
+.testimonial .image-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial .image-text img {
+  width: 80px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.testimonial .image-text p {
+  margin-left: 20px;
+}
+
+.testimonial .image-text p span {
+  color: #25a5fa;
+}
+
+@media screen and (max-width: 1280px) {
+  .testimonial {
+    width: 90%;
+    padding: 50px 10px;
+  }
 }
 
 section {
