@@ -3,7 +3,7 @@
   background-color: $primary-color;
   display: inline-block;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   color: $white;
   border-radius: 5px;
   padding: 10px 25px;
@@ -11,7 +11,7 @@
 
   &:hover {
     cursor: pointer;
-    background-color: #0155ca;
+    background: darken($primary-color, 10%);
   }
 }
 
