@@ -1,7 +1,56 @@
+Layout systems
+
+A) Flexbox
+B) Grid
+C) Normal
+
+
 Formulate Components 1
 
-1) Navbar 
-2) Hero 
+1) Navbars
+2) Heroes 
 3) Features
-4) Card
-5) Heading
+4) Cards
+5) Headings
+
+Formulate Components 2
+
+6) Pricings
+7) Tables
+8) CTAs
+9) Forms & Input fields
+10) Content & Blog sections
+
+Fromulate Components 3
+
+11) Buttons
+12) Footers
+13) 404 Errors
+14) Siderbars
+15) Stats
+
+Formulate components 4
+
+16) Accordions
+17) Modals
+18) Banners
+19) Teams
+20) Lists
+
+Formulate Components 5 
+
+21) Tabs
+22) Breadcrumbs
+23) Pagination
+24) Dropdowns
+25) Product cards
+
+Formulate Components 6
+
+26) Sliders & Carousels // glide.js
+27) Popovers
+28) Spinners
+29) Notifications
+30) Comments
+
+Easily create custom components too.

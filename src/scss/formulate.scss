@@ -1,2 +1,8 @@
-@import "config";
-@import "layout/layout"
+@import "mixins";
+@import "global";
+@import "theme";
+@import "layout";
+@import "button";
+@import "heading";
+@import "navbar";
+

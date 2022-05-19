@@ -5,31 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulate</title>
-    <link rel="stylesheet" href="./scss/formulate.scss" />
+    <link rel="stylesheet" href="./scss//formulate.scss?id=12" />
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
   </head>
   <body>
-    <div class="flex-container">
-      <div class="flex-row" style="flex-direction: row-reverse">
-        <div class="flex-col" style="padding: 20px;">
-          <img
-            src="https://static.nike.com/a/images/w_1920,c_limit/6ca98205-3a29-4635-b884-4f2f33e26ffe/nike%E2%80%99s-best-golf-shoes-for-traction-stability-and-comfort.jpg"
-            alt=""
-            style="width: 100%; height: 100%"
-          />
+    <header class="nav-heading">
+      <p>Get a FREE $50 discount!</p>
+    </header>
+    <nav class="navbar">
+      <a><img src="./images/bliss-logo.svg" alt="logo" class="nav-logo" /></a>
+      <ul id="sidebar">
+        <li class="dropdown-item" id="dropdown-item">
+          <a>Home <i class="far fa-caret-down dropdown-caret"></i></a>
+          <div class="dropdown-menu" id="dropdown-menu">
+            <a href="" class="dropdown-link">
+              <div class="dropdown-content">
+                <p>Development</p>
+                <p class="dropdown-text">Hello world how are you!</p>
+              </div>
+            </a>
+            <a href="" class="dropdown-link"
+              ><div class="dropdown-content">
+                Work
+                <p class="dropdown-text">Working all day all night!</p>
+              </div>
+            </a>
+            <a href="" class="dropdown-link"
+              ><div class="dropdown-content">
+                Work
+                <p class="dropdown-text">Working all day all night!</p>
+              </div>
+            </a>
+            <a href="" class="dropdown-link"
+              ><div class="dropdown-content">
+                Work
+                <p class="dropdown-text">
+                  Playing poker all day and all night is what we do all the
+                  time. You should join us and see how it's done.
+                </p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="dropdown-item">
+          <a>About <i class="far fa-caret-down dropdown-caret"></i></a>
+          <div class="dropdown-menu">
+            <a href="" class="dropdown-link">
+              <div class="dropdown-content">
+                <p>Development</p>
+                <p class="dropdown-text">Hello world how are you!</p>
+              </div>
+            </a>
+            <a href="" class="dropdown-link"
+              ><div class="dropdown-content">
+                Work
+                <p class="dropdown-text">Working all day all night!</p>
+              </div>
+            </a>
+            <a href="" class="dropdown-link"
+              ><div class="dropdown-content">
+                Work
+                <p class="dropdown-text">Working all day all night!</p>
+              </div>
+            </a>
+            <a href="" class="dropdown-link"
+              ><div class="dropdown-content">
+                Work
+                <p class="dropdown-text">
+                  Playing poker all day and all night is what we do all the
+                  time. You should join us and see how it's done.
+                </p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Clients</a></li>
+        <li><a href="">Gallery</a></li>
+        <button class="button mobile-button">Send Request</button>
+      </ul>
+      <button class="button">Send Request</button>
+      <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden" />
+      <label for="checkbox2" class="hamburger-label">
+        <div class="hamburger hamburger2" id="hamburger">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+          <span class="bar bar4"></span>
         </div>
-        <div class="flex-col" style="justify-content: center; align-items: center; padding: 20px;">
-          <h1 style="text-align: center;">Hello these are the new shoes.</h1>
-          <p style="text-align: center;">We love the food we eat everyday because it's super delicious. You should really try it. I have never eaten something so delicious.</p>
-        </div>
-      </div>
-      <div class="flex-row">
-        <div class="flex-col"></div>
-        <div class="flex-col"></div>
-        <div class="flex-col"></div>
-        <div class="flex-col"></div>
-    </div>
-    <h2>Hello World</h2>
+      </label>
+    </nav>
 
     <script src="./js/formulate.js" type="module"></script>
+    <script src="../fontawesome/js/pro.min.js" type="module"></script>
   </body>
 </html>

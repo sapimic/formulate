@@ -1,0 +1,15 @@
+.button {
+    transition: all 0.3s;
+    background-color: $theme-color;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+
+    &:hover {
+        background-color: darken($theme-color, 10%);
+        cursor: pointer;
+    }
+}
